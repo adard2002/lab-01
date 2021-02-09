@@ -1,9 +1,9 @@
 nav {
   position: fixed;
   text-align: center;
-  height: 25px;
-  top:0;
+  height: 75px;
   width: 100%;
+  top:0;
 }
 
 nav ul {
