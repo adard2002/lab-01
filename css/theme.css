@@ -1,95 +1,167 @@
 /* holiday stuff (Halloween) */
 
 
-body {
+  * {
+    align-content: center;
+    text-align: center;
+    
+  }
+
+  body {
   background: rgb(41, 41, 41);
   color: whitesmoke;
-}
+  width: px;
+  }
 
-header {
-  font-size: 50px;
-}
+  header {
+  height: 10vh;
+  align-content: center;
+  }
 
-footer {
-  background-color: rgb(191, 136, 255);
-  height: 32px;
-  text-align: center;
-  margin-top: 25px;
-}
+  section:nth-child(1) {
+  width: 100%;
+  height: 14vh;
+  align-content: center;
+  }
 
-footer p {
-  padding-top: 10px;
-  color: black;
-}
+  section:nth-child(2), section:nth-child(3) {
+  width: 100%;
+  height: 11vh;
+  align-content: center;
 
-section {
-  text-align: center;
-}
+  }
 
-.itemOne {
-  height: 150px;
-  text-align: center;
-  margin-top: 25px;
+  .threeRow {
+  display: grid;
   outline-style: solid;
-}
-
-.itemTwo {
-  height: 125px;
+  outline-color: whitesmoke;
+  flex-direction: column;
   text-align: center;
-  outline-style: solid;
-}
-
-.itemTextOne {
-  line-height: 140px;
-}
-
-.itemTextTwo {
-  line-height: 120px;
-}
+  }
 
 
-/* ------- Boxes -------*/
-.row {
+  footer {
+  height: 7vh;
+  text-align: center;
+  align-content: center;
+  }
+
+
+
+  /* ---- 2 x 2 boxes/grid ---- */
+  /* makes the boxes not show all on the left or float left */
+  .row {
   display: flex;
   width: 100%;
-}
+  }
 
-.row div {
+  /* Makes it not all squished to the side */
+  .row div {
   width: 50%;
-}
+  }
 
-.noMargin {
+  /* makes sure there is no margin between the boxes */
+  .noMargin {
   margin: 0px;
-}
+  }
 
-.boxOne {
+  /* the size, border, and text of the grid boxes */
+  .twoByTwo {
+  display: grid;
+  align-items: center;
   text-align: center;
   height: 250px;
-  line-height: 200px;
   outline-style: solid;
   outline-color: whitesmoke;
-}
+  }
 
-.boxTwo {
-  text-align: center;
-  height: 250px;
-  line-height: 200px;
-  outline-style: solid;
-  outline-color: whitesmoke;
-}
 
-.boxThree {
-  text-align: center;
-  height: 250px;
-  line-height: 200px;
-  outline-style: solid;
-  outline-color: whitesmoke;
-}
+/* ============================== */
+/* ----------- PHONE ------------ */
+/* ============================== */
+  @media only screen and (max-width: 400px){
 
-.boxFour {
-  text-align: center;
-  height: 250px;
-  line-height: 200px;
-  outline-style: solid;
-  outline-color: whitesmoke;
+    * {
+      align-content: center;
+      text-align: center;
+    }
+
+  body {
+    background: rgb(41, 41, 41);
+    color: whitesmoke;
+  }
+  
+  header {
+    height: 7vh;
+    align-content: center;
+  }
+
+  section:nth-child(1) {
+    width: 100%;
+    height: 14vh;
+    align-content: center;
+  }
+
+  section:nth-child(2), section:nth-child(3) {
+    width: 100%;
+    height: 11vh;
+    align-content: center;
+
+  }
+
+  .threeRow {
+    display: grid;
+    outline-style: solid;
+    outline-color: whitesmoke;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer {
+    width: 100%;
+    height: 7vh;
+    align-content: center;
+  }
+
+/*   
+  footer {
+    background-color: rgb(191, 136, 255);
+    height: 32px;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  footer p {
+    padding-top: 10px;
+    color: black;
+  } */
+  
+
+  /* ---- 2 x 2 boxes/grid ---- */
+  /* makes the boxes not show all on the left or float left */
+  .row {
+    display: flex;
+    width: 100%;
+  }
+
+  /* Makes it not all squished to the side */
+  .row div {
+    width: 50%;
+  }
+  
+  /* makes sure there is no margin between the boxes */
+  .noMargin {
+    margin: 0px;
+  }
+
+  /* the size, border, and text of the grid boxes */
+  .twoByTwo {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    height: 250px;
+    outline-style: solid;
+    outline-color: whitesmoke;
+  }
+
 }
